@@ -82,10 +82,10 @@
      <Compile Include="Assets\ConsolePro\Remote\LiteNetLib\SimpleChannel.cs" />
      <None Include="Assets\ConsolePro\Remote\ConsoleProRemote.asmdef" />
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Fork/Submarine/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Fork/Submarine/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Unity/2019.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -274,13 +274,13 @@
  <HintPath>C:/Unity/2019.4.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="ConsolePro.Editor">
- <HintPath>C:/Fork/Submarine/Assets/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
+ <HintPath>C:/Fork/Sub/Submarine/Assets/ConsolePro/Editor/ConsolePro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>C:/Fork/Submarine/Assets/DOTween/DOTween.dll</HintPath>
+ <HintPath>C:/Fork/Sub/Submarine/Assets/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTweenEditor">
- <HintPath>C:/Fork/Submarine/Assets/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ <HintPath>C:/Fork/Sub/Submarine/Assets/DOTween/Editor/DOTweenEditor.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Unity/2019.4.15f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
