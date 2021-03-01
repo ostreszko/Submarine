@@ -180,9 +180,20 @@ public class SubmarineController : MonoBehaviour
     {
         if (isPowerOn)
         {
-            submarineRb.DORotate(new Vector3(0, transform.localEulerAngles.y + 180f, 0), 1f, RotateMode.Fast);
+            StartCoroutine(RotateCoroutine());
             AudioManager.Instance.Play("TurnAround");
         }
+    }
+
+    IEnumerator RotateCoroutine()
+    {
+        submarineRb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
+                                  RigidbodyConstraints.FreezeRotationZ; 
+        
+        yield return submarineRb.DORotate(new Vector3(0, transform.localEulerAngles.y + 180f, 0), 1f, RotateMode.Fast).WaitForCompletion();
+       
+        submarineRb.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX |
+                                  RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY; 
     }
     
     public void PowerOn()

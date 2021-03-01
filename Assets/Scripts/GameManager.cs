@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     
     private Button screenshotButton;
 
+    [HideInInspector]
     public bool GameRunning = true;
     
     public static string PlayerName { get; set; }
@@ -25,9 +26,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        
-
     }
 
     private void OnEnable()

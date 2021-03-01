@@ -14,7 +14,8 @@ public class LightsHolder : MonoBehaviour
     [SerializeField]
     private float addSpotAngleSpeed;
 
-    private float maxAngle = 60f;
+    [SerializeField]
+    private float maxAngle = 70f;
     
     void Update()
     {
