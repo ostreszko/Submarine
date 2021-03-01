@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 5420948745110417453}
   m_Layer: 0
   m_Name: YellowSubmarine
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,7 +305,6 @@ MonoBehaviour:
   propellorRotationSpeed: 100
   proppelorBubbles: {fileID: 107262139226609585}
   ventTubesBubbles: {fileID: 2504042698593292547}
-  hitBubbles: {fileID: 0}
   renderers:
   - {fileID: 5637616517123067895}
   - {fileID: 6748438645484868902}

@@ -118,38 +118,39 @@
      <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
      <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
-     <Compile Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Scripts\HUDFPS.cs" />
-     <Compile Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Scripts\PDS_GameController.cs" />
-     <Compile Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Scripts\ScrollingUVs_PDS.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\DestroyEffect.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\csLightControl.cs" />
+     <Compile Include="Assets\Fx Explosion Pack\Script\csMouseOrbit.cs" />
+     <Compile Include="Assets\Scripts\CoinController.cs" />
+     <Compile Include="Assets\Scripts\ControlPanelHelper.cs" />
      <Compile Include="Assets\Scripts\DepthMine.cs" />
      <Compile Include="Assets\Scripts\FishController.cs" />
+     <Compile Include="Assets\Scripts\GameEndWindowController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\HighscoreData.cs" />
+     <Compile Include="Assets\Scripts\HighscorePlaceUIController.cs" />
+     <Compile Include="Assets\Scripts\HighscoreUIHelper.cs" />
      <Compile Include="Assets\Scripts\HitBubblesController.cs" />
      <Compile Include="Assets\Scripts\LightsHolder.cs" />
+     <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\ObjectPooler.cs" />
-     <Compile Include="Assets\Scripts\PlayerControll.cs" />
+     <Compile Include="Assets\Scripts\SaveHighscoreSystem.cs" />
+     <Compile Include="Assets\Scripts\SceneObjectsSpawner.cs" />
+     <Compile Include="Assets\Scripts\Sounds\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\Sounds\Sound.cs" />
      <Compile Include="Assets\Scripts\SubmarineController.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\UnderwaterFantasy\Scripts\Done_BGScroller.cs" />
      <Compile Include="Assets\UnderwaterFantasy\Scripts\Perspective2DSortMode.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\DissolveSoft_Alpha_Additive_softrim.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\Dissolve_Alpha_Additive_softrim.shader" />
      <None Include="Assets\Jiggly Bubble Free\Shaders\Particle Alpha Blended Cubemap.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Jiggly Bubble Free\Shaders\Particle Alpha Blended Cubemap Skybox.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\DissolveSoft_Alpha_Unlit.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\Cinemachine\ReleaseNotes.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\unity5\Particle_Softrim_Dissolve_alpha.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\Dissolve_Alpha_Unlit_Opacity_softrim.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\softrim\Particle_softrim_add.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\DissolveSoft_Alpha_Additive_Opacity_softrim.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\softrim\Particle_softrim_add_stretch.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\DissolveSoft_Alpha_Additive.shader" />
      <None Include="Assets\DOTween\readme.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -157,29 +158,15 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\DissolveSoft_Alpha_Unlit_Opacity.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\Dissolve_Alpha_Additive.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\Dissolve_Alpha_Unlit_softrim.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\DissolveSoft_Alpha_Unlit_Opacity_softrim.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\softrim\Particle_softrim_alpha.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\ReadMe.txt" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\DissolveSoft_Alpha_Unlit_softrim.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\Dissolve_Alpha_Unlit_Opacity.shader" />
      <None Include="Assets\Jiggly Bubble Free\readme_Jiggly_Bubble_Free.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\DissolveSoft_Alpha_Additive_Opacity.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\Dissolve_Alpha_Additive_Opacity_softrim.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\Dissolve_Alpha_Unlit.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\unity5\Particle_Softrim_Dissolve_additive.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\softrim\Particle_softrim_alpha_stretch.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\Particle Dissolve Shader by Moonflower Carnivore\Shaders\legacy\Dissolve_Alpha_Additive_Opacity.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -207,6 +194,36 @@
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.SpriteShape.Editor">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Path.Editor">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InternalAPIEngineBridge.001">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Common.Runtime">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.SpriteShape.Runtime">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics.Editor">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Common.Editor">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InternalAPIEditorBridge.001">
+ <HintPath>C:/Fork/Sub/Submarine/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Unity/2019.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

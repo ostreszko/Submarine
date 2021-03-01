@@ -41,24 +41,31 @@ public class SubmarineController : MonoBehaviour
     private bool isGoDown = false;
 
     private bool isInvincible = false;
+
+    private AudioManager audioManager;
     
     void Start()
     {
-
+        audioManager = AudioManager.Instance;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (!isInvincible && other.CompareTag("Fish"))
         {
-            timer.DeplateTime(10f);
+            timer.DeplateTime(5f);
+            audioManager.Play("BubblesHit");
+            
             StartCoroutine(BoatHit());
-
+            
         }
         
         if (other.CompareTag("Mine"))
         {
-            timer.DeplateTime(20f);
+            timer.DeplateTime(10f);
+            audioManager.Play("MineExplosion");
+            
+            StartCoroutine(BoatHit());
         }
     }
 
@@ -68,6 +75,12 @@ public class SubmarineController : MonoBehaviour
         {
             if (isSpeedUp)
             {
+                
+                if (!audioManager.IsPlaying("EngineForward"))
+                {
+                    audioManager.Play("EngineForward");
+                }
+                
                 submarineRb.AddForce(-transform.right * (submarineSpeed * Time.deltaTime), ForceMode.Impulse);
 
                 
@@ -76,29 +89,84 @@ public class SubmarineController : MonoBehaviour
                     proppelorBubbles.Play();
                 }
                 
-            }else if (proppelorBubbles.isPlaying)
+            }else 
             {
-                proppelorBubbles.Stop();
+                if (proppelorBubbles.isPlaying)
+                {
+                    proppelorBubbles.Stop();
+                }
+
+                if (audioManager.IsPlaying("EngineForward"))
+                {
+                    audioManager.StopPlaying("EngineForward");
+                }
             }
 
             if (isGoDown)
             {
+                if (!audioManager.IsPlaying("FallBubbles"))
+                {
+                    audioManager.Play("FallBubbles");
+                }
+                
+                
                 submarineRb.AddForce(Vector3.down * (submarineSpeed * Time.deltaTime), ForceMode.Impulse);
                 
                 if (!ventTubesBubbles.isPlaying)
                 {
                     ventTubesBubbles.Play();
                 }
-            }else if (ventTubesBubbles.isPlaying)
+            }else 
             {
-                ventTubesBubbles.Stop();
+                if (ventTubesBubbles.isPlaying)
+                {
+                    ventTubesBubbles.Stop();
+                }
+                
+                if (audioManager.IsPlaying("FallBubbles"))
+                {
+                    audioManager.StopPlaying("FallBubbles");
+                }
             }
 
             if (isGoUp)
             {
                 submarineRb.AddForce(Vector3.up * (submarineSpeed * Time.deltaTime), ForceMode.Impulse);
             }
+
+            if (!audioManager.IsPlaying("SubmarineEngine"))
+            {
+                audioManager.Play("SubmarineEngine");
+            }
+
+
+        }
+        else 
+        {
+            if (audioManager.IsPlaying("SubmarineEngine"))
+            {
+                audioManager.StopPlaying("SubmarineEngine");
+            }
             
+            if (audioManager.IsPlaying("FallBubbles"))
+            {
+                audioManager.StopPlaying("FallBubbles");
+            }
+            
+            if (proppelorBubbles.isPlaying)
+            {
+                proppelorBubbles.Stop();
+            }
+
+            if (audioManager.IsPlaying("EngineForward"))
+            {
+                audioManager.StopPlaying("EngineForward");
+            }
+            
+            if (ventTubesBubbles.isPlaying)
+            {
+                ventTubesBubbles.Stop();
+            }
 
         }
         
@@ -110,7 +178,11 @@ public class SubmarineController : MonoBehaviour
 
     public void RotateSubmarine()
     {
-        submarineRb.DORotate(new Vector3(0, transform.localEulerAngles.y + 180f, 0), 1f, RotateMode.Fast);
+        if (isPowerOn)
+        {
+            submarineRb.DORotate(new Vector3(0, transform.localEulerAngles.y + 180f, 0), 1f, RotateMode.Fast);
+            AudioManager.Instance.Play("TurnAround");
+        }
     }
     
     public void PowerOn()

@@ -6,14 +6,27 @@ using UnityEngine.Serialization;
 public class LightsHolder : MonoBehaviour
 {
     [SerializeField]
-    private Transform spotLightTransform;
+    private Light spotLight;
     
     [SerializeField]
     private Transform playerTransform;
+
+    [SerializeField]
+    private float addSpotAngleSpeed;
+
+    private float maxAngle = 60f;
     
     void Update()
     {
-        spotLightTransform.position =
-            new Vector3(playerTransform.position.x, playerTransform.position.y, spotLightTransform.position.z);
+        spotLight.transform.position =
+            new Vector3(playerTransform.position.x, playerTransform.position.y, spotLight.transform.position.z);
+
+        if (spotLight.spotAngle < maxAngle)
+        {
+            spotLight.spotAngle += addSpotAngleSpeed * Time.deltaTime; 
+        }
+
+
+
     }
 }
